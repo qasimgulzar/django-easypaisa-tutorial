@@ -54,4 +54,15 @@
                 <input value="confirm" type="submit" name="pay"/>
         </form>
     ```
+
+
+#How to setup tutorial project.
+    git clone https://github.com/qasimgulzar/django-easypaisa-tutorial.git
+    cd django-easypaisa-tutorial
+    pip install -r requirements.txt
+    export DJANGO_SETTINGS_MODULE=easypaisa.settings on linux
+    set DJANGO_SETTINGS_MODULE=easypaisa.settings if you are using windows
     
+    python manage.py migrate
+    
+    python manage.py runserver
