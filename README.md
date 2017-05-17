@@ -19,7 +19,7 @@
         STORE_ID=os.environ.get("STORE_ID",None) ###you will get store id easypaisa's merchant portal.
         PAYMEN_TEMPLATE='index.html' ###set payment confirmation template which will also post data t easypaisa's server for first redirection.
         PAY_TEMPLATE='pay.html' ### set template for second redirection which will post auth_token to easypaisa for second redirection.
-        EASYPAISA_POST_BACK_URL=os.environ.get('EASYPAISA_POST_BACK_URL','https://easypaisa.herokuapp.com/payments/postbackhandler/')
+        EASYPAISA_POST_BACK_URL=os.environ.get('EASYPAISA_POST_BACK_URL','https://easypaisa-tutorial.herokuapp.com/payments/postbackhandler/')
         EASYPAISA_SERVER_URL=os.environ.get('EASYPAISA_SERVER_URL','https://easypaystg.easypaisa.com.pk')
         PAYMENT_COMPLETION_REDIRECT_TO_URL='/'
     

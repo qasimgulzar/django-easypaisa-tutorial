@@ -174,6 +174,6 @@ TEMPLATES = [
 STORE_ID=os.environ.get("STORE_ID",None)
 PAYMEN_TEMPLATE='index.html'
 PAY_TEMPLATE='pay.html'
-EASYPAISA_POST_BACK_URL=os.environ.get('EASYPAISA_POST_BACK_URL','https://easypaisa.herokuapp.com/payments/postbackhandler/')
+EASYPAISA_POST_BACK_URL=os.environ.get('EASYPAISA_POST_BACK_URL','https://easypaisa-tutorial.herokuapp.com/payments/postbackhandler/')
 EASYPAISA_SERVER_URL=os.environ.get('EASYPAISA_SERVER_URL','https://easypaystg.easypaisa.com.pk')
 PAYMENT_COMPLETION_REDIRECT_TO_URL='/'
