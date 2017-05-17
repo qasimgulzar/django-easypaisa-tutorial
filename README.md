@@ -15,14 +15,14 @@
         ]`
     3. add django-easypaisa urls to your application's urls file
         url(r'^payments/', include('django_easypaisa.urls', namespace='django_easypaisa'))
-    4. set parameters settings\
+    4. set parameters settings
         STORE_ID=os.environ.get("STORE_ID",None) ###you will get store id easypaisa's merchant portal.
         PAYMEN_TEMPLATE='index.html' ###set payment confirmation template which will also post data t easypaisa's server for first redirection.
         PAY_TEMPLATE='pay.html' ### set template for second redirection which will post auth_token to easypaisa for second redirection.
         EASYPAISA_POST_BACK_URL=os.environ.get('EASYPAISA_POST_BACK_URL','https://easypaisa-tutorial.herokuapp.com/payments/postbackhandler/')
         EASYPAISA_SERVER_URL=os.environ.get('EASYPAISA_SERVER_URL','https://easypaystg.easypaisa.com.pk')
-        PAYMENT_COMPLETION_REDIRECT_TO_URL='/'
-    
+        PAYMENT_COMPLETION_REDIRECT_TO_URL='/' # set redirect url.
+    4.5 export STORE_ID=<your-store-id>
     5. Make migrations `python manage.py makemigrations` 
     6. Run migrations `python manage.py migrate`
 
