@@ -27,7 +27,7 @@
     6. Run migrations `python manage.py migrate`
 
 ##4.1 Content for PAYMEN_TEMPLATE
-    <form action="{{ EASYPAISA_SERVER_URL }}/easypay/Index.jsf " method="POST" target="_blank">
+    `<form action="{{ EASYPAISA_SERVER_URL }}/easypay/Index.jsf " method="POST" target="_blank">
             <! -- Store Id Provided by Easypay-->
             <input name="storeId" value="2785" hidden = "true"/>
             <! -- Amount of Transaction from merchant’s website -->
@@ -40,12 +40,12 @@
     {#        <input type ="hidden" name="expiryDate" value="20140606 201521">#}
             <! – This is the button of the form which submits the form -- >
             <input type = "image" src="checkout-button-with-logo.png" border="0" name= "pay">
-    </form>
+    </form>`
     
 ##4.2 Content for PAY_TEMPLATE
-    <form action="{{ EASYPAISA_SERVER_URL }}/easypay/Confirm.jsf " method="POST" target="_blank">
+    `<form action="{{ EASYPAISA_SERVER_URL }}/easypay/Confirm.jsf " method="POST" target="_blank">
         <input name="auth_token" value="{{ auth_token }}" hidden="true"/>
         <input name="postBackURL" value="{{ postBackURL }}" hidden="true"/>
         <input value="confirm" type="submit" name="pay"/>
-    </form>
+    </form>`
     
