@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pay</title>
+</head>
+<body>
+<form action="{{ EASYPAISA_SERVER_URL }}/easypay/Confirm.jsf " method="POST" target="_blank">
+    <input name="auth_token" value="{{ auth_token }}" hidden="true"/>
+    <input name="postBackURL" value="{{ postBackURL }}" hidden="true"/>
+    <input value="confirm" type="submit" name="pay"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+django==1.11.1
+gunicorn==0.14.6
+whitenoise==3.3.0
+httplib2==0.10.3
+git+https://github.com/qasimgulzar/easypaisa_module
