@@ -26,7 +26,7 @@
     5. Make migrations `python manage.py makemigrations` 
     6. Run migrations `python manage.py migrate`
 
-##4.1 Content for PAYMEN_TEMPLATE
+## 4.1 Content for PAYMEN_TEMPLATE
 
     ```html
             <form action="{{ EASYPAISA_SERVER_URL }}/easypay/Index.jsf " method="POST" target="_blank">
@@ -45,7 +45,7 @@
                 </form>
     ```
     
-##4.2 Content for PAY_TEMPLATE
+## 4.2 Content for PAY_TEMPLATE
 
     ```html
         <form action="{{ EASYPAISA_SERVER_URL }}/easypay/Confirm.jsf " method="POST" target="_blank">
@@ -56,7 +56,8 @@
     ```
 
 
-#How to setup tutorial project.
+# How to setup tutorial project.
+
     git clone https://github.com/qasimgulzar/django-easypaisa-tutorial.git
     cd django-easypaisa-tutorial
     pip install -r requirements.txt
